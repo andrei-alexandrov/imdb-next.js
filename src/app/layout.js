@@ -1,20 +1,23 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/Header';
+import Provider from './Provider';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Imdb clone",
-  description: "Imdb clone with next.js and tailwind",
+  title: 'IMDb clone',
+  description: 'This is a movie database clone',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.className}>
-        <Header />
-        {children}
+        <Provider>
+          <Header />
+          {children}
+        </Provider>
       </body>
     </html>
   );
