@@ -14,7 +14,6 @@ export default function Card({ result }) {
           width={500}
           height={300}
           alt="tmdb-image"
-          priority
         ></Image>
 
         <div className="p-2">
