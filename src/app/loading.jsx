@@ -1,7 +1,9 @@
-export default function loading() {
+import Image from "next/image";
+
+export default function Loading() {
   return (
     <div className="flex justify-center mt-14">
-      <img src="loader.svg" alt="loading..." />
+      <Image src="loader.svg" alt="loading..." width={100} height={50} />
     </div>
   );
 }
