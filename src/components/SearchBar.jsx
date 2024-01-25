@@ -29,6 +29,7 @@ export default function SearchBar() {
             placeholder="Search keywords here..."
             value={search}
             onChange={getInput}
+            id="1"
           />
           <button
             className="absolute inset-y-0 right-0 px-4 text-amber-600 disabled:text-gray-400 bg-gray-600 rounded-r-md"
