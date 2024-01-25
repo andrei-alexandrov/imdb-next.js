@@ -6,7 +6,17 @@ import linkedIn from "../../public/linkedin.png";
 export default function Footer() {
   return (
     <div className="flex flex-col items-center dark:bg-gray-600 bg-amber-100 p-4 lg:text-lg">
-      <div className="mb-2">Created by Andrei Alexandrov</div>
+      <div className="mb-1">Created by Andrei Alexandrov</div>
+      <div className="mb-2">
+        Used Api:{" "}
+        <Link
+        className="underline hover:text-amber-600"
+          href="https://developer.themoviedb.org/reference/intro/getting-started"
+          target="blank_"
+        >
+          TMDB
+        </Link>
+      </div>
       <div className="flex gap-2">
         <Link href="https://github.com/andrei-alexandrov" target="blank_">
           <div>
